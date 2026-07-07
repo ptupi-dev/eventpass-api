@@ -57,7 +57,7 @@ Production-inspired REST API built with Fastify and TypeScript for the EventPass
 The project keeps each responsibility in a small layer so the API stays easy to change as the mobile app grows.
 
 src  
-├── app.ts
+├── app.ts  
 ├── server.ts  
 ├── types.ts  
 ├── app.test.ts  
