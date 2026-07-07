@@ -4,11 +4,11 @@ Production-inspired REST API built with Fastify and TypeScript for the EventPass
 
 ![LICENSE](https://img.shields.io/badge/license-MIT-green)  
 [![TYPESCRIPT](https://img.shields.io/badge/language-typescript-informational)](https://docs.expo.dev/guides/typescript/)  
-[![FASTIFY](https://img.shields.io/badge/tech-fastify-green)](https://fastify.dev/)
-[![JSONWEBTOKEN](https://img.shields.io/badge/jsonwebtoken-green)](https://www.jwt.io/)
-[![ZOD](https://img.shields.io/badge/zod-green)](https://zod.dev/)
+[![FASTIFY](https://img.shields.io/badge/tech-fastify-white)](https://fastify.dev/)
+[![JSONWEBTOKEN](https://img.shields.io/badge/jsonwebtoken-white)](https://www.jwt.io/)
+[![ZOD](https://img.shields.io/badge/zod-white)](https://zod.dev/)
 
-## Features
+# Features
 
 - Login endpoint with JSON Web Token authentication.
 - Public event listing for the React Native app home/feed screen.
@@ -18,7 +18,7 @@ Production-inspired REST API built with Fastify and TypeScript for the EventPass
 - JSON-backed data layer for lightweight local development.
 - Integration tests using Fastify `inject` and Vitest.
 
-## Tech Stack
+# Tech Stack
 
 1. Runtime
 
@@ -52,7 +52,7 @@ Production-inspired REST API built with Fastify and TypeScript for the EventPass
 
 - Local JSON files in `src/data`
 
-## Architecture
+# Architecture
 
 The project keeps each responsibility in a small layer so the API stays easy to change as the mobile app grows.
 
@@ -70,7 +70,7 @@ src
 ├── schemas  
 └── services
 
-### Layer Responsibilities
+# Layer Responsibilities
 
 - **Routes** handle HTTP details: params, status codes, request/response shape.
 - **Services** hold application behavior and business rules.
@@ -80,7 +80,7 @@ src
 
 This makes it straightforward to replace the JSON repository with SQLite, PostgreSQL, Prisma, or another real database later without rewriting the route handlers.
 
-## Endpoints
+# Endpoints
 
 ### `POST /login`
 
@@ -125,7 +125,7 @@ curl http://localhost:3333/tickets/1 \
   -H "Authorization: Bearer YOUR_TOKEN"
 ```
 
-## React Native Usage
+# React Native Usage
 
 Start the backend:
 
@@ -148,7 +148,7 @@ const API_URL = "http://10.0.2.2:3333";
 const API_URL = "http://localhost:3333";
 ```
 
-## Scripts
+# Scripts
 
 Start the development server:
 
@@ -168,6 +168,6 @@ Build the project:
 npm run build
 ```
 
-## VS Code Tasks
+# VS Code Tasks
 
 Run the test task from VS Code with `Terminal > Run Task > Run tests`.
