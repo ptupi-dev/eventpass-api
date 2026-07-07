@@ -1,0 +1,38 @@
+{
+  "name": "eventpass-api",
+  "version": "1.0.0",
+  "description": "Production-inspired REST API built with Fastify and TypeScript for the EventPass mobile application. Showcases JWT authentication, request validation, clean architecture, testing, and scalable backend design.",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest run src/app.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptupi-dev/eventpass-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptupi-dev/eventpass-api/issues"
+  },
+  "homepage": "https://github.com/ptupi-dev/eventpass-api#readme",
+  "dependencies": {
+    "fastify": "^5.10.0",
+    "jsonwebtoken": "^9.0.3",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^26.1.0",
+    "eslint": "^10.6.0",
+    "prettier": "^3.9.4",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
+  }
+}
